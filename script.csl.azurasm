@@ -1,0 +1,38 @@
+global:
+global
+ldc ldc_table
+ldc ldc_number 0.0
+array_push
+ldc ldc_number 1.0
+array_push
+table_set a
+pop
+ldc ldc_number -1.0
+store 0
+null
+store 1
+label 1-1
+load 0
+ldc ldc_number 1.0
+add
+load 0
+set
+load 0
+global
+get a
+global
+get length
+call 1
+greater_equals
+if 1-0
+global
+get a
+load 0
+array_get
+store 1
+load 1
+global
+get print
+call 1
+goto 1-1
+label 1-0
